@@ -1,0 +1,256 @@
+{
+  "projectType": "framework",
+  "projectName": "Botpress",
+  "projectDescription": "Open-source platform for building next-generation AI agents and chatbots powered by LLMs.",
+  "theme": "palm",
+  "primaryColor": "#5f48ea",
+  "lightColor": "#8b7ff5",
+  "darkColor": "#4a38ba",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/bots",
+              "concepts/integrations",
+              "concepts/plugins",
+              "concepts/interfaces"
+            ]
+          },
+          {
+            "group": "Building Bots",
+            "pages": [
+              "bots/creating-bots",
+              "bots/bot-definition",
+              "bots/bot-handlers",
+              "bots/conversations",
+              "bots/messages",
+              "bots/state-management",
+              "bots/workflows"
+            ]
+          },
+          {
+            "group": "Building Integrations",
+            "pages": [
+              "integrations/overview",
+              "integrations/creating-integrations",
+              "integrations/integration-definition",
+              "integrations/channels",
+              "integrations/actions",
+              "integrations/events",
+              "integrations/configuration",
+              "integrations/deployment"
+            ]
+          },
+          {
+            "group": "Building Plugins",
+            "pages": [
+              "plugins/overview",
+              "plugins/creating-plugins",
+              "plugins/plugin-definition",
+              "plugins/plugin-handlers"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "interfaces/overview",
+              "interfaces/available-interfaces",
+              "interfaces/creating-interfaces"
+            ]
+          },
+          {
+            "group": "Development Tools",
+            "pages": [
+              "devtools/cli-overview",
+              "devtools/sdk-overview",
+              "devtools/client-overview",
+              "devtools/local-development"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/init",
+              "cli/build",
+              "cli/dev",
+              "cli/deploy",
+              "cli/login",
+              "cli/logout",
+              "cli/add",
+              "cli/gen",
+              "cli/lint"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "cli/configuration",
+              "cli/project-structure"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "SDK Reference",
+        "groups": [
+          {
+            "group": "Bot SDK",
+            "pages": [
+              "sdk/bot/bot-definition",
+              "sdk/bot/bot-implementation",
+              "sdk/bot/bot-client",
+              "sdk/bot/bot-logger",
+              "sdk/bot/bot-handlers"
+            ]
+          },
+          {
+            "group": "Integration SDK",
+            "pages": [
+              "sdk/integration/integration-definition",
+              "sdk/integration/integration-implementation",
+              "sdk/integration/integration-context",
+              "sdk/integration/integration-client",
+              "sdk/integration/integration-logger"
+            ]
+          },
+          {
+            "group": "Plugin SDK",
+            "pages": [
+              "sdk/plugin/plugin-definition",
+              "sdk/plugin/plugin-implementation",
+              "sdk/plugin/plugin-handlers"
+            ]
+          },
+          {
+            "group": "Interface SDK",
+            "pages": [
+              "sdk/interface/interface-definition"
+            ]
+          },
+          {
+            "group": "Common",
+            "pages": [
+              "sdk/common/messages",
+              "sdk/common/zui",
+              "sdk/common/errors"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Client API",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "client/getting-started",
+              "client/authentication"
+            ]
+          },
+          {
+            "group": "API Resources",
+            "pages": [
+              "client/bots",
+              "client/conversations",
+              "client/messages",
+              "client/users",
+              "client/integrations",
+              "client/events",
+              "client/files",
+              "client/tables"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "client/error-handling",
+              "client/pagination"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Hub Integrations",
+        "groups": [
+          {
+            "group": "Communication",
+            "pages": [
+              "hub/slack",
+              "hub/telegram",
+              "hub/discord",
+              "hub/whatsapp",
+              "hub/teams"
+            ]
+          },
+          {
+            "group": "AI & LLM",
+            "pages": [
+              "hub/openai",
+              "hub/anthropic",
+              "hub/cerebras"
+            ]
+          },
+          {
+            "group": "Productivity",
+            "pages": [
+              "hub/notion",
+              "hub/google-calendar",
+              "hub/asana",
+              "hub/airtable"
+            ]
+          },
+          {
+            "group": "All Integrations",
+            "pages": [
+              "hub/integration-catalog"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Build AI agents and chatbots with TypeScript SDK",
+    "65+ pre-built integrations with popular platforms",
+    "Plugin system for extending bot capabilities",
+    "Interface system for reusable behaviors",
+    "CLI for scaffolding, building, and deploying",
+    "Type-safe client for consuming Botpress APIs",
+    "Local development with hot reload",
+    "Bot-as-code approach for programmatic bot building"
+  ],
+  "publicApiSurface": [
+    "@botpress/cli - Command-line interface",
+    "@botpress/sdk - SDK for building bots, integrations, and plugins",
+    "@botpress/client - Type-safe API client",
+    "IntegrationDefinition - Define custom integrations",
+    "BotDefinition - Define chatbots",
+    "PluginDefinition - Define plugins",
+    "InterfaceDefinition - Define reusable interfaces",
+    "bp init - Initialize new projects",
+    "bp build - Build projects",
+    "bp dev - Start development server",
+    "bp deploy - Deploy to Botpress Cloud",
+    "Client.createBot() - Create bots via API",
+    "Client.sendMessage() - Send messages via API",
+    "Client.createConversation() - Create conversations via API"
+  ]
+}
